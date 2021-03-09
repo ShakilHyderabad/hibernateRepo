@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+<class name="com.nt.entity.CovidEntity" table="COVID_DATA">
+<id name="sid" type="int" column="SID"></id>
+<property name="name" type="string" column="NAME" ></property>
+<property name="totalCases" type="long" column="TOTAL_CASE"></property>
+<property name="activCases" type="long" column="ACTV_CASE"></property>
+<property name="deathCases" type="long" column="DETH_CASE"></property>
+<property name="releaseCases" type="long" column="RELS_CASE"></property>
+</class>
+</hibernate-mapping>
